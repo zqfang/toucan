@@ -59,19 +59,20 @@ see an spatial example input in the `example` data folder
 ## Installation
 
 1. Install hdf5 C library
-   1. On MacOS, you can install it via: 
+
+- On MacOS, you can install it via: 
 
 ```bash
 brew install hdf5@1.10
 ```
 
-   2. On Linux, you can install it via: 
+- On Linux, you can install it via: 
 
 ```bash
 sudo apt install libhdf5-dev
 ```
 
-   3. On Windows, no extra installation needed.
+- On Windows, no extra installation needed.
       
 ```bash
 # not required
