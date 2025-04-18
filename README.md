@@ -15,6 +15,35 @@ Toucan is an app that allows you visualize your single cell data in a desktop PC
 - [x] Cross-platform: Windows, macOS, Linux, Android, iOS
 - [x] Fast Wilcoxon test (Rust implementation of [wilcoxauc](https://github.com/immunogenomics/presto) )
 
+## Usage
+
+Please refer to [Cirrocumulus](https://cirrocumulus.readthedocs.io/en/latest/documentation.html)
+
+## Installation
+
+1. Install hdf5 C library
+
+- On MacOS, you can install it via: 
+
+```bash
+brew install hdf5@1.10
+```
+
+- On Linux, you can install it via: 
+
+```bash
+sudo apt install libhdf5-dev
+```
+
+- On Windows, no extra installation needed.
+      
+```bash
+# not required
+winget install --id HDFGroup.HDF5 --source winget
+```
+2. [Download](https://github.com/zqfang/toucan/releases) the precompile binaries and install.
+3. Run the app
+
 ## Input Requirements
 
 ### Anndata
@@ -54,33 +83,6 @@ put the following two files in the same directory as the anndata file:
 ```
 
 see an spatial example input in the `example` data folder
-
-
-## Installation
-
-1. Install hdf5 C library
-
-- On MacOS, you can install it via: 
-
-```bash
-brew install hdf5@1.10
-```
-
-- On Linux, you can install it via: 
-
-```bash
-sudo apt install libhdf5-dev
-```
-
-- On Windows, no extra installation needed.
-      
-```bash
-# not required
-winget install --id HDFGroup.HDF5 --source winget`
-```
-2. [Download](https://github.com/zqfang/toucan/releases) the precompile binaries and install.
-3. Run the app
-
 
 
 ## Credits
