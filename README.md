@@ -4,7 +4,7 @@
 
 Toucan is an app that allows you visualize your single cell data in a desktop PC.
 
-[Download](https://github.com/zqfang/toucan/releases)
+[Download](https://github.com/zqfang/toucan/releases) the pre-compiled binaries.
 
 ## Features
 
@@ -57,13 +57,23 @@ Toucan supports the following on-disk formats:
 For seurat object, you can convert it to anndata-hdf5 with the following commands:
 
 ```R
-# in R 
-remotes::install_github("scverse/anndataR")
-adata = anndataR::from_Seurat(seurat_obj)
-adata$write_h5ad("data.h5ad")
-# or 
+# in R, install
 remotes::install_github("zqfang/MuDataSeurat")
-MuDataSeurat::WriteH5AD(seurat_obj, file = "data.h5ad", sparse.type='csc_matrx', scale.data = FALSE)
+# then
+MuDataSeurat::WriteH5AD(seurat_obj, 
+                        file = "data.h5ad", 
+                        assay="RNA",
+                        sparse.type='csc_matrx', 
+                        scale.data = FALSE)
+
+
+# or use 
+remotes::install_github("scverse/anndataR")
+adata = anndataR::from_Seurat(seurat_obj, 
+                      assay_name = "SCT", 
+                      x_mapping = 'data', 
+                      layers_mapping =list(counts = "counts"))
+adata$write_h5ad("data.h5ad")
 ```
 ### Spatial Transcriptoimcs (optional)
 
