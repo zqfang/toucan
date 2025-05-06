@@ -6,9 +6,13 @@ Toucan is an app that allows you visualize your single cell data in a desktop PC
 
 [Download](https://github.com/zqfang/toucan/releases) the pre-compiled binaries.
 
+
+![screenshot](./toucan.png)
+
+
 ## Features
 
-- [x] Visualize single cell data: scRNA-seq, scATAC-seq, 10x Visium, NanoString Cosmx, etc
+- [x] Visualize single cell data: scRNA-seq, 10x Visium, NanoString Cosmx, etc
 - [x] Visualize anndata file: hdf5, zarr
 - [x] No Python or R runtime is required
 - [x] Out-of-core, serverless, and data stays on your device.  
