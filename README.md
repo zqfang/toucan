@@ -2,7 +2,7 @@
 
 ## Overview
 
-Toucan is an app that allows you visualize your single cell data in a desktop PC.
+Toucan is an app that allows you visualize your large-scale single-cell data in a desktop PC.
 
 [Download](https://github.com/zqfang/toucan/releases) the pre-compiled binaries.
 
@@ -18,6 +18,7 @@ Toucan is an app that allows you visualize your single cell data in a desktop PC
 - [x] Out-of-core, serverless, and data stays on your device.  
 - [x] Cross-platform: Windows, macOS, Linux, Android, iOS
 - [x] Fast Wilcoxon test (Rust implementation of [wilcoxauc](https://github.com/immunogenomics/presto) )
+- [x] scalable for millions of cells.  
 
 ## Usage
 
