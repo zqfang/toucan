@@ -7,7 +7,7 @@ Toucan is an app that allows you visualize your large-scale single-cell data in 
 [Download](https://github.com/zqfang/toucan/releases) the pre-compiled binaries.
 
 
-![screenshot](./toucan.png)
+![screenshot](./toucan.gif)
 
 
 ## Features
