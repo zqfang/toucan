@@ -34,6 +34,12 @@ Please refer to [Cirrocumulus](https://cirrocumulus.readthedocs.io/en/latest/doc
 brew install hdf5@1.10
 ```
 
+after install toucan, in terminal, run
+```bash
+# to fix app could not open issue
+sudo xattr -r -d com.apple.quarantine /Applications/Toucan.app
+```
+
 - On Linux, you can install it via: 
 
 ```bash
